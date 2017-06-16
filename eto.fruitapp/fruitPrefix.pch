@@ -1,0 +1,58 @@
+//
+//  fruitPrefix.pch
+//  eto.fruitapp
+//
+//  Created by wyy on 15/10/30.
+//  Copyright © 2015年 wyy. All rights reserved.
+//
+
+#ifndef fruitPrefix_pch
+#define fruitPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "YYFruitTool.h"
+
+#import <AlipaySDK/AlipaySDK.h>
+#import "YYFruitDatabaseTool.h"
+#import "MBProgressHUD+CZ.h"
+#import "AFNetworking.h"
+#import "FMDB.h"
+#import "UIImageView+WebCache.h"
+
+#define YYAddressKey @"YYAddressKey"
+#define YYLoginSuccess @"YYLoginSuccess"
+
+
+#define widthScreen [UIScreen mainScreen].bounds.size.width
+#define heightScreen [UIScreen mainScreen].bounds.size.height
+#define YY16WidthMargin 16/375.0*widthScreen
+#define YY10HeightMargin 10/667.0*heightScreen
+#define YY15HeightMargin 15/667.0*heightScreen
+#define YY10WidthMargin 10/375.0*widthScreen
+#define YYViewBGColor [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0]
+#define YYNavigationBarColor [UIColor colorWithRed:253/255.0 green:211/255.0 blue:55/255.0 alpha:1.0]
+#define YYYellowTextColor [UIColor colorWithRed:180/255.0 green:151/255.0 blue:39/255.0 alpha:1]
+
+
+
+#define YYGreenColor [UIColor colorWithRed:117/255.0 green:183/255.0 blue:66/255.0 alpha:1.0]
+
+#define YYGrayLineColor [UIColor colorWithRed:203/255.0 green:202/255.0 blue:201/255.0 alpha:1.0]
+#define YYGrayColor [UIColor colorWithRed:236/255.0 green:236/255.0 blue:236/255.0 alpha:1.0]
+#define YYGrayTextColor [UIColor colorWithRed:113/255.0 green:113/255.0 blue:113/255.0 alpha:1]
+
+#define YYOrangeColor [UIColor colorWithRed:246/255.0 green:116/255.0 blue:56/255.0 alpha:1.0]
+
+#define YYGreenGotoshop [UIColor colorWithRed:126/255.0 green:194/255.0 blue:76/255.0 alpha:1.0]
+#define YYGreenBGColor [UIColor colorWithRed:127/255.0 green:189/255.0 blue:84/255.0 alpha:1.0]
+
+
+#ifdef DEBUG
+#define YYLog(...) NSLog(@"%s\n %@\n\n",__func__, [NSString stringWithFormat:__VA_ARGS__])
+#else
+#define YYLog(...)
+#endif
+
+#endif /* fruitPrefix_pch */
